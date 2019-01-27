@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.hello = [[Hello alloc] init];
-    self.hello.message = @"Hello World";
+    self.hello = [[Hello alloc] init]; //you also need to alloc and init the object even after making the property
+    self.hello.message = @"Hello World"; //.message is from Hello.h property
     
 }
 
